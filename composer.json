@@ -10,6 +10,9 @@
             "email": "ignas.rudaitis@gmail.com"
         }
     ],
+    "autoload": {
+        "files": [ "Patchwork.php" ]
+    },
     "minimum-stability": "stable",
     "require": {
         "php": ">=5.3.0"
