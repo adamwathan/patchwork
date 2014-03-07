@@ -54,3 +54,36 @@ function start()
         Preprocessor\Callbacks\Interceptor\injectScheduledPatchApplicationCode(),
     ));
 }
+
+class Patchwork
+{
+    public static function replace($function, $replacement)
+    {
+        return replace($function, $replacement);
+    }
+
+    public static function replaceLater($function, $replacement)
+    {
+        return replaceLater($function, $replacement);
+    }
+
+    public static function pass()
+    {
+        pass();
+    }
+
+    public static function undo(Interceptor\PatchHandle $handle)
+    {
+       undo($handle);
+    }
+
+    public static function undoAll()
+    {
+        undoAll();
+    }
+
+    public static function start()
+    {
+        start();
+    }
+}
